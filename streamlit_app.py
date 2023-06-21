@@ -23,9 +23,9 @@ def get_fruityvice_data(this_fruit_choice):
   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+this_fruit_choice)
 
     # write your own comment -what does the next line do? 
-    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+  fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     # write your own comment - what does this do?
-    return (fruityvice_normalized)
+  return (fruityvice_normalized)
 
 
 streamlit.header("Fruityvice Fruit Advice!")
